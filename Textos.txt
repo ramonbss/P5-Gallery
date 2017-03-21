@@ -1,0 +1,28 @@
+Booth_1_phobias
+
+"The Virtual Reality offers a new human-computer interaction form of therapy for individuals with some anxiety disorders due to fear of heights, elevators, public speaking, flying and so on."
+
+
+"The patient is immersed in a virtual reality environment containing the feared stimulus in place of taking the patient into a real environment or having the patient imagine the stimulus."
+
+"The experts explain that the person who is going to do a virtual reality exercise knows that he is in a safe environment, but his brain reacts as if the environment were real."
+
+
+Booth_2_Medical_Trainning
+
+"VR is being used in medical schools and other healthcare setups for instructing and educating."
+
+"Medical students now have a more interactive method to learn and understand the human body and its systems, within the VR environment."
+
+"Trainees can learn life-saving techniques and skills without placing anyone (the patients and themselves) at risk."
+
+"As VR offers a realistic scenario, students respond to high pressure situation and learn how to deal with it. This is a perfect way to get ready for the real event."
+
+"With no risk involved, students can interact with stimulated emergency or accident in a virtual reality environment."
+
+
+Booth_3_
+
+Booth_4_
+
+Booth_5_
