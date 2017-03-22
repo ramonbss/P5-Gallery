@@ -9,6 +9,7 @@ public class waypoint_animmation : MonoBehaviour {
 	public GameObject player;
 	public GameObject Panel_Msg;
 	public string waypoint_title;
+	public Text waypoint_text;
 
 	void onStart()
 	{

@@ -41,6 +41,9 @@ public class ImageSequenceSingleTexture : MonoBehaviour
 	
 	void Update () 
 	{
+
+		//float distance = Vector3.Distance (Player.transform.position,transform.position);
+
 		if (isPaused == false) {
 			//Start the 'PlayLoop' method as a coroutine with a 0.04 delay  
 			//StartCoroutine("PlayLoop", 0.04f);
