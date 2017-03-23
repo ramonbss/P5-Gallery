@@ -21,6 +21,7 @@ public class menu_script : MonoBehaviour {
 		else if( screen_index == 1 )
 		{
 			Panel2.SetActive(false);
+			Destroy (gameObject);
 		}
 	}
 
