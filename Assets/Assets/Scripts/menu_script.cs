@@ -9,6 +9,8 @@ public class menu_script : MonoBehaviour {
 	public GameObject Panel1;
 	public GameObject Panel2;
 
+	public GameObject WayPoints;
+
 
 	public void update_screen()
 	{
@@ -21,6 +23,7 @@ public class menu_script : MonoBehaviour {
 		else if( screen_index == 1 )
 		{
 			Panel2.SetActive(false);
+			WayPoints.SetActive (true);
 			Destroy (gameObject);
 		}
 	}

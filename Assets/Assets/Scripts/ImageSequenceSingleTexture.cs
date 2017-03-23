@@ -48,7 +48,7 @@ public class ImageSequenceSingleTexture : MonoBehaviour
 
 		float distance = Vector3.Distance (Player.transform.position,transform.position);
 
-		Debug.Log ("distance: " + distance);
+		//Debug.Log ("distance: " + distance);
 
 		if( distance < 7 )
 		{

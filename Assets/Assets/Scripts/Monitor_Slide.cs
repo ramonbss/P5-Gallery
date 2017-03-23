@@ -12,13 +12,33 @@ public class Monitor_Slide : MonoBehaviour {
 	public RawImage Monitor;
 	public Text txt_bookmark;
 
+	public Text txt_Slide;
+
 	private int index = 0;
 	private int size_textures = 0;
 
+	private GameObject Player;
+
 	void Start()
 	{
+		Player = GameObject.Find ("GvrMain_with_Gaze");
 		size_textures = slides.Length;
 		ShowSlide ();
+	}
+
+	void Update()
+	{
+		float distance = Vector3.Distance (Player.transform.position,transform.position);
+
+		//Debug.Log ("distance: " + distance);
+
+		if( distance < 6 )
+		{
+			txt_Slide.raycastTarget = true;
+		}
+		else{
+			txt_Slide.raycastTarget = false;
+		}
 	}
 
 	public void onNext()
