@@ -51,6 +51,7 @@
      <Compile Include="Assets\Assets\Scripts\ImageSequenceSingleTexture.cs" />
      <Compile Include="Assets\Assets\Scripts\ImageSequenceTextureArray.cs" />
      <Compile Include="Assets\Assets\Scripts\Monitor_Slide.cs" />
+     <Compile Include="Assets\Assets\Scripts\menu_script.cs" />
      <Compile Include="Assets\Assets\Scripts\picture_plane.cs" />
      <Compile Include="Assets\Assets\Scripts\waypoint_animmation.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoInputManager.cs" />
