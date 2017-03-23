@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Assets\Scripts\Audio_Management.cs" />
      <Compile Include="Assets\Assets\Scripts\Editor_Tools.cs" />
      <Compile Include="Assets\Assets\Scripts\ImageSequenceSingleTexture.cs" />
      <Compile Include="Assets\Assets\Scripts\ImageSequenceTextureArray.cs" />

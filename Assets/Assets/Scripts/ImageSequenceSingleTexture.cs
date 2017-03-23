@@ -24,6 +24,9 @@ public class ImageSequenceSingleTexture : MonoBehaviour
 
 	public bool isPaused  = false;
 
+	private GameObject Player;
+	public GameObject Scanning_Audio;
+
 	void Awake()
 	{
 		//Get a reference to the Material of the game object this script is attached to
@@ -34,6 +37,7 @@ public class ImageSequenceSingleTexture : MonoBehaviour
 	
 	void Start () 
 	{
+		Player = GameObject.Find ("GvrMain_with_Gaze");
 		//set the initial frame as the first texture. Load it from the first image on the folder
 		//texture = (Texture)Resources.Load(baseName + "00000", typeof(Texture));
 				texture = (Texture)Resources.Load(baseName + "1", typeof(Texture));
@@ -42,7 +46,21 @@ public class ImageSequenceSingleTexture : MonoBehaviour
 	void Update () 
 	{
 
-		//float distance = Vector3.Distance (Player.transform.position,transform.position);
+		float distance = Vector3.Distance (Player.transform.position,transform.position);
+
+		Debug.Log ("distance: " + distance);
+
+		if( distance < 7 )
+		{
+			isPaused = false;
+			if( !Scanning_Audio.GetComponent<GvrAudioSource> ().isPlaying )
+				Scanning_Audio.GetComponent<GvrAudioSource> ().Play ();
+		}
+		else{
+			isPaused = true;
+			if( Scanning_Audio.GetComponent<GvrAudioSource> ().isPlaying )
+				Scanning_Audio.GetComponent<GvrAudioSource> ().Pause();
+		}
 
 		if (isPaused == false) {
 			//Start the 'PlayLoop' method as a coroutine with a 0.04 delay  
